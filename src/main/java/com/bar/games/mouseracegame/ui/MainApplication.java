@@ -8,14 +8,12 @@ import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
-import java.io.File;
-
 public class MainApplication extends Application {
     private Game game;
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        FXMLLoader loader = new FXMLLoader(new File("C:\\Users\\user\\MouseRace\\src\\main\\java\\com\\bar\\games\\mouseracegame\\ui\\leaderboard.fxml").toURI().toURL());
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/bar/games/mouseracegame/ui/leaderboard.fxml"));
         Parent root = loader.load();
         MainController controller = loader.getController();
 

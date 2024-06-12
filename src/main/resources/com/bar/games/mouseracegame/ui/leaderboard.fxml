@@ -12,6 +12,6 @@
     <Button fx:id="startButton" mnemonicParsing="false" onAction="#startGame" styleClass="start-button" text="Start" />
 
     <stylesheets>
-        <URL value="@styles.css" />
+        <URL value="@/com/bar/games/mouseracegame/ui/styles.css" />
     </stylesheets>
 </VBox>
